@@ -1,9 +1,6 @@
 sudo: required
 
 language: python
-python:
-  - '3.6'
-  - '2.7'
 
 services:
   - docker
@@ -14,6 +11,7 @@ script:
 after_success:
   - if [ "$TRAVIS_BRANCH" == "master" ]; then
     docker login -u $DOCKER_USER -p $DOCKER_PASS
+    echo $TRAVIS_REPO_SLUG
     docker build -t $TRAVIS_REPO_SLUG .
     docker push $TRAVIS_REPO_SLUG
     fi
