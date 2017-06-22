@@ -19,7 +19,7 @@ def generator_page():
 @app.route("/fizzbuzz")
 def fizzbuzz_page():
     page = '<html><body><h1>'
-    page += fizzbuzz.fizzbuzz(0, 15)
+    page += ' '.join(map(str, fizzbuzz.fizzbuzz(0, 15)))
     page += '</h1></body></html>'
     return page
 
