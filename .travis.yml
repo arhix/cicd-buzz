@@ -10,7 +10,7 @@ after_success:
 deploy:
   provider: heroku
   api_key:
-    secure: $HEROKU_API_KEY
-  app: $HEROKU_APP_NAME
+    secure: W0sLMRWwzdunp76pXPiJu+6eXAbRAnkP56KzH9u3tE95gUHKjS5j8HEva0nN4nERUfHr/oQrA4KxpeCGg6IFnD+pd/LZb3AgoWNprLW7GyUXF74REz6oAZiHkoKVLbCABGn4Ysdu0AY5B48UT7NsboKZbN67RwiCGrtPcAikXZHTnGgG1+W6AQooCbdsHd7QmNNdy+9iWz4l26+QvksLIMpr38OXjxgJuPZ0VkLq0YjNB4F6ag/n388EzUCO2zriMb0S7khzVbhz/s4RD683/Lnh6QtXxhT1VaDFeeIN2THTdMJRz0WgRznL2sD2xbNAwbUH6V/Evy1xBu1bYZwEc3up55E3rr05tme8LBGaxVKULCuKy/iigT7aeEx4L79lretLFy+sir3U8evNM+UvzhAXHP2mcg9cyIwXd6gLqRwvRDYCgoWEYulIfxp6aDaOTQqSp1bYKKrYv/ELdu7hd8eLRUQHuZ4bJ32LoQonjRR+H6GRwfRBvdRxrQaz55gSa4xjE4xi2aGwLwVnBv6gtgnj3Bf+Q7W8VTdGowas+TCTEVqDsnUYftQFwSBB4+PF0MM1ZDdup9ICg0pI9clk13kGmqO/GxswD5W+UNoidMzM4bFVB5wGIes+iheixKR0MyLHm4KoyvgnLPCwmHw5s9ZDpoUaYuSnNDyeT2GsQ+c=
+  app: aqueous-atoll-24021
   on:
     repo: arhix/cicd-buzz
