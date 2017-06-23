@@ -7,7 +7,7 @@ script:
 after_success:
 - if [ "$TRAVIS_BRANCH" == "master" ]; then docker login -u $DOCKER_USER -p $DOCKER_PASS;
   docker build -t $TRAVIS_REPO_SLUG .; docker push $TRAVIS_REPO_SLUG; fi
-- CODECLIMATE_REPO_TOKEN=fd6a145cad6bd411c068635d869491ebdc015caede8d23624eab653dd8bbddb0 codeclimate-test-reporter
+- if [ "$TRAVIS_PULL_REQUEST" == "false" ]; then CODECLIMATE_REPO_TOKEN=fd6a145cad6bd411c068635d869491ebdc015caede8d23624eab653dd8bbddb0 codeclimate-test-reporter; fi
 deploy:
   provider: heroku
   api_key:
