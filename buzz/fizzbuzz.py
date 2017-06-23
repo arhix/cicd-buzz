@@ -1,18 +1,14 @@
 
 def fizzbuzz(min, max):
-    fizzbuzz = []
+    result = []
     for number in range(min, max+1):
-        isFizz = number % 3
-        isBuzz = number % 5
-
-        result = ''
-        if isFizz == 0:
-            result += 'Fizz'
-        if isBuzz == 0:
-            result += 'Buzz'
-
-        fizzbuzz.append(result if result else number)
-    return fizzbuzz
+        item = ''
+        if number % 3 == 0:
+            item += 'Fizz'
+        if number % 5 == 0:
+            item += 'Buzz'
+        result.append(result if result else number)
+    return result
 
 
 if __name__ == "__main__":
