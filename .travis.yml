@@ -3,10 +3,11 @@ language: python
 services:
 - docker
 script:
-- python -m pytest -v
+- python -m pytest -v --cov=buzz --cov-report term-missing
 after_success:
 - if [ "$TRAVIS_BRANCH" == "master" ]; then docker login -u $DOCKER_USER -p $DOCKER_PASS;
   docker build -t $TRAVIS_REPO_SLUG .; docker push $TRAVIS_REPO_SLUG; fi
+- codeclimate-test-reporter
 deploy:
   provider: heroku
   api_key:

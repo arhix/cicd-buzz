@@ -7,7 +7,7 @@ def fizzbuzz(min, max):
             item += 'Fizz'
         if number % 5 == 0:
             item += 'Buzz'
-        result.append(result if result else number)
+        result.append(item if item else number)
     return result
 
 
