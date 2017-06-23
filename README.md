@@ -6,8 +6,9 @@ CI/CD Buzz
 [![Test Coverage](https://codeclimate.com/github/arhix/cicd-buzz/badges/coverage.svg)](https://codeclimate.com/github/arhix/cicd-buzz/coverage)
 [![Issue Count](https://codeclimate.com/github/arhix/cicd-buzz/badges/issue_count.svg)](https://codeclimate.com/github/arhix/cicd-buzz)
 
-### Based on:
+Based on
+--------
 
- * [Article on Medium.io](https://medium.com/bettercode/how-to-build-a-modern-ci-cd-pipeline-5faa01891a5b)
+* [Article on Medium.io](https://medium.com/bettercode/how-to-build-a-modern-ci-cd-pipeline-5faa01891a5b)
 
- * [Article on Habrahabr.ru](https://habrahabr.ru/company/southbridge/blog/329262/)
+* [Article on Habrahabr.ru](https://habrahabr.ru/company/southbridge/blog/329262/)
