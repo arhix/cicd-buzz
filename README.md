@@ -8,7 +8,6 @@ CI/CD Buzz
 [![Issue Count](https://codeclimate.com/github/arhix/cicd-buzz/badges/issue_count.svg)](https://codeclimate.com/github/arhix/cicd-buzz)
 [![Test Coverage](https://codeclimate.com/github/arhix/cicd-buzz/badges/coverage.svg)](https://codeclimate.com/github/arhix/cicd-buzz/coverage)
 
-
 Based on
 --------
 
