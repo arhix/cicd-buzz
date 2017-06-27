@@ -9,7 +9,3 @@ def fizzbuzz(min, max):
             item += 'Buzz'
         result.append(item if item else number)
     return result
-
-
-if __name__ == "__main__":
-    print(fizzbuzz(0, 100))
