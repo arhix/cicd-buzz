@@ -1,7 +1,7 @@
 
-def fizzbuzz(min, max):
+def fizzbuzz(start, stop):
     result = []
-    for number in range(min, max+1):
+    for number in range(start, stop+1):
         item = ''
         if number % 3 == 0:
             item += 'Fizz'
