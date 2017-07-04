@@ -35,6 +35,8 @@ def image_search(query):
     return parse_qs(urlparse(url).query, keep_blank_values=True)["r"][0]
 
 
-def request_to_api(api_url, key, data={}, headers={}):
+def request_to_api(api_url, key, data=None, headers=None):
+    headers = {} if headers is None else headers
+    data = {} if data is None else data
     r = requests.get(api_url, params=data, headers=headers)
     return r.json().get(key, [])
