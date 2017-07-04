@@ -1,6 +1,7 @@
 CI/CD Buzz
 ==========
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/4e704a67b9d040169373e963cd720f53)](https://www.codacy.com/app/arhix/cicd-buzz?utm_source=github.com&utm_medium=referral&utm_content=arhix/cicd-buzz&utm_campaign=badger)
 [![Build Status](https://travis-ci.org/arhix/cicd-buzz.svg?branch=master)](https://travis-ci.org/arhix/cicd-buzz)
 [![Heroku](http://heroku-badge.herokuapp.com/?app=aqueous-atoll-24021&style=flat&svg=1)](https://aqueous-atoll-24021.herokuapp.com/)
 
