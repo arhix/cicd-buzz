@@ -1,5 +1,5 @@
 import os
-import random
+import secrets
 import requests
 from urllib.parse import parse_qs, urlparse
 
@@ -15,7 +15,7 @@ def gif_search(query):
     if len(results) == 0:
         return None
 
-    return random.choice(results)["images"]["fixed_height"]["url"]
+    return secrets.choice(results)["images"]["fixed_height"]["url"]
 
 
 def image_search(query):
@@ -31,7 +31,7 @@ def image_search(query):
     if len(results) == 0:
         return None
 
-    url = random.choice(results)["contentUrl"]
+    url = secrets.choice(results)["contentUrl"]
     return parse_qs(urlparse(url).query, keep_blank_values=True)["r"][0]
 
 
