@@ -1,7 +1,8 @@
 import os
 import signal
+import json
 from flask import Flask, request, render_template
-from buzz import generator, fizzbuzz, api
+from buzz import generator, fizzbuzz, api, graph
 
 app = Flask(__name__)
 
@@ -29,6 +30,17 @@ def image_search_page(query):
     if url:
         return render_template('image.html', url=url, alt=query)
     return render_template('basic.html', content="Couldn't find anything!")
+
+
+@app.route('/graph/data')
+def graph_data_page():
+    graph_data = graph.generate_graph()
+    return json.dumps(graph_data)
+
+
+@app.route('/graph')
+def graph_page():
+    return render_template('graph.html')
 
 
 if __name__ == '__main__':
