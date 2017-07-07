@@ -15,9 +15,8 @@ def generator_page():
 
 @app.route('/fizzbuzz')
 def fizzbuzz_page():
-    return render_template(
-        'basic.html',
-        content=' '.join(map(str, fizzbuzz.fizzbuzz(0, 15))))
+    fizzbuzz_data = ' '.join(map(str, fizzbuzz.generate(0, 15).values()))
+    return render_template('basic.html', content=fizzbuzz_data)
 
 
 @app.route('/gif/<query>', endpoint='gif')

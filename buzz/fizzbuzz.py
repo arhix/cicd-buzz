@@ -1,5 +1,5 @@
 
-def fizzbuzz(start, stop):
+def generate(start, stop):
     result = {}
     for number in range(start, stop+1):
         item = ''
