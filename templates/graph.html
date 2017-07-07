@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+{% block title %}
+    {{ title }}
+{% endblock %}
+{% block head %}
+    {{ super() }}
+    <style type="text/css">
+        #graph-container {
+            max-width: 400px;
+            height: 400px;
+            margin: auto;
+        }
+    </style>
+{% endblock %}
+{% block content %}
+    <div id="graph-container"></div>
+{% endblock %}
+{% block footer %}
+    <script src="https://cdn.bootcss.com/sigma.js/1.2.0/sigma.min.js"></script>
+    <script src="https://cdn.bootcss.com/sigma.js/1.2.0/plugins/sigma.parsers.json.min.js"></script>
+    <script>
+        sigma.parsers.json('/graph/data', {
+            container: 'graph-container',
+            settings: {
+                defaultNodeColor: '#ec5148'
+            }
+        });
+    </script>
+{% endblock %}
