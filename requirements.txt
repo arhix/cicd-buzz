@@ -3,4 +3,4 @@ Flask==1.0
 gunicorn==19.6.0
 codeclimate-test-reporter
 pytest-cov<=2.5.1
-coverage<4.4
+coverage<5.1
