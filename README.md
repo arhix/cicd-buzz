@@ -2,7 +2,6 @@ CI/CD Buzz
 ==========
 
 [![Build Status](https://travis-ci.org/arhix/cicd-buzz.svg?branch=master)](https://travis-ci.org/arhix/cicd-buzz)
-[![Dependency Status](https://dependencyci.com/github/arhix/cicd-buzz/badge)](https://dependencyci.com/github/arhix/cicd-buzz)
 [![Heroku](http://heroku-badge.herokuapp.com/?app=aqueous-atoll-24021&style=flat&svg=1)](https://aqueous-atoll-24021.herokuapp.com/)
 
 [![BCH compliance](https://bettercodehub.com/edge/badge/arhix/cicd-buzz?branch=master)](https://bettercodehub.com/)
