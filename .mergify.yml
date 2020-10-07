@@ -6,3 +6,9 @@ pull_request_rules:
     actions:
       comment:
         message: '@dependabot merge'
+  - name: Automatic merge on approval
+    conditions:
+      - approved-reviews-by=arhix
+    actions:
+      merge:
+        method: merge
