@@ -9,6 +9,14 @@ pull_request_rules:
   - name: Automatic merge on approval
     conditions:
       - approved-reviews-by=arhix
+      - status-success=Travis CI - Pull Request
+    actions:
+      merge:
+        method: merge
+  - name: Automatic merge on approval
+    conditions:
+      - author=arhix
+      - status-success=Travis CI - Pull Request
     actions:
       merge:
         method: merge
