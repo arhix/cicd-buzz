@@ -1,6 +1,6 @@
 pytest==6.2.2
 Flask==1.1.2
-gunicorn==20.0.4
+gunicorn==20.1.0
 codeclimate-test-reporter
 pytest-cov<2.11.2
 coverage<5.6
